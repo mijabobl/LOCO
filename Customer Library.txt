@@ -1,0 +1,49 @@
+--------------------------------------------------------
+-- Schema Library
+-- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `Library` ;
+
+-- -----------------------------------------------------
+-- Schema Library
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `Library` DEFAULT CHARACTER SET utf8 ;
+USE `Library` ;
+
+-- -----------------------------------------------------
+-- Table `Library`.`Customer`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `Music`.`Artists` ;
+
+CREATE TABLE IF NOT EXISTS `Library`.`Customer` (
+ `CustomerId` INT NOT NULL AUTO_INCREMENT,
+ `FirstName` VARCHAR(100) NOT NULL,
+ `LastName` VARCHAR(100) NOT NULL,
+ `Email` VARCHAR(100) NOT NULL,
+ `Address` VARCHAR(255) NOT NULL,
+ `Phone` VARCHAR(11) NOT NULL,
+ `TotalLoans` INT,
+ `DOB` DATETIME NOT NULL,
+ PRIMARY KEY (`CustomerId`));
+
+
+USE Library;
+
+--
+-- Dumping data for table Customer
+--
+
+SET AUTOCOMMIT=0;
+INSERT INTO Customer VALUES (1,'Michael','Blake','mikeB123@sql.com', '25 Alder Cresent Poole BH15 3ER', '01208456456','0', '1980-03-10 04:04:04'),
+(2,'Chris','Waddle','wingwizzard@marseille.com', '5 Owlerton Cresent Sheffield SH1 3AA', '06754564996','0', '1972-02-20 04:04:04'),
+(3,'Jennifer','Saunders','jdog@yahoo.com', '675 Bishington Grenwich GH5 3FG', '01768765456','0', '1952-05-25 04:04:04'),
+(4,'Clayton','Blackmore','clabowag@hotmail.com', '23 Generation Way Fominster F017 3DF', '01876545678','0', '1968-10-01 04:04:04'),
+(5,'Syhaia','Harris','yougogirl245@hotmail.com', '2 The Flares Northwinds NB76 3TH', '01765980777','0', '1998-06-11 04:04:04'),
+(6,'Roger','Skelton','skellyway@parkerflooring.com', '80 Heckington Gardens Bournemouth FE22 3DF', '01876098654','0', '2011-06-04 04:04:04'),
+(7,'Benito','Carbone','magician@god.com', '211 Westlands Birmingham TH56 2SD', '01208456456','0', '1999-12-30 04:04:04'),
+(8,'Rachael','Riley','numberbod@yahoo.com', '876 The Long Mile Southampton SO16 4AA', '01251345654','0', '1982-11-22 04:04:04'),
+(9,'Penelope','Piston','crankshaft@formula.com', 'The Coach House Chisham GJ7 3FG', '01364769867','0', '1970-05-28 04:04:04'),
+(10,'Mitch','De Barker','auusierules@sql.com', 'Flat 3 22 Dark Lane Derby DE2 4GH', '01111999888','0', '1977-04-11 04:04:04');
+COMMIT;
+
+
+
