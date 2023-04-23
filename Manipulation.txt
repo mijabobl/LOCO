@@ -1,0 +1,13 @@
+ 
+
+SELECT * FROM library.customer
+WHERE FirstName LIKE 'C%';
+
+UPDATE library.customer 
+SET LastName = 'Blake', TotalLoans = '0'
+WHERE CustomerId = '1';
+
+INSERT INTO library.customer
+VALUES ('11', 'Penfold', 'Poignton', 'pp@doublep.com', '88 Northwinds Bury BU2 8JH', '03876567489', '0', '1990-05-02 04:05:06');
+
+DELETE FROM library.customer WHERE CustomerId = '11';
