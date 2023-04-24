@@ -1,0 +1,14 @@
+INSERT INTO library.staff_table 
+VALUES 
+('1', 'Greig', 'David', 'david@something.com', '1234DG'),
+('2', 'McElroy', 'Susan', 'susan@something.com', '1234SE'),
+('3', 'Al', 'Aliman', 'aliman@something.com', '1234AA'),
+('4', 'Berry', 'Karl', 'karl@something.com', '1234KB'),
+('5', 'H', 'Mike', 'mike@something.com', '1234MH');
+
+UPDATE library.staff_table
+SET LastName = 'Thomson'
+WHERE staffID = '1';
+
+DELETE From library.staff_table
+WHERE staffID = '4';
