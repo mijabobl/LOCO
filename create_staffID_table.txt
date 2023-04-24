@@ -1,0 +1,7 @@
+create table staff_table (
+StaffID int,
+LastName varchar(255),
+firstName varchar(255),
+Email varchar(255),
+Pword varchar(255)
+);
