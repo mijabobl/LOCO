@@ -1,0 +1,7 @@
+create table Loan (\
+LoanID int,\
+CustomerID int,\
+BookID int,\
+DateOUT datetime default now(),\
+FeePaid set("DUE","PAID")\
+);}
